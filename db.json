@@ -1,0 +1,98 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "SSLC Mathematics",
+      "description": "Complete SSLC Maths preparation with video lectures and notes.",
+      "subject": "Mathematics",
+      "level": "SSLC",
+      "lectures": 50,
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "SSLC Science",
+      "description": "Physics, Chemistry, Biology for SSLC students.",
+      "subject": "Science",
+      "level": "SSLC",
+      "lectures": 75,
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "PUC Physics",
+      "description": "Advanced Physics for PUC students.",
+      "subject": "Physics",
+      "level": "PUC",
+      "lectures": 40,
+      "price": 499
+    },
+    {
+      "id": 4,
+      "name": "KCET Chemistry",
+      "description": "KCET focused Chemistry preparation.",
+      "subject": "Chemistry",
+      "level": "KCET",
+      "lectures": 35,
+      "price": 599
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Rahul Sharma",
+      "message": "Parikshe helped me score 95% in SSLC. The video lectures are amazing!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Priya Patel",
+      "message": "The doubt-solving feature is a lifesaver. Highly recommend for PUC prep.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Arjun Kumar",
+      "message": "KCET preparation was made easy with Parikshe's structured content.",
+      "rating": 4
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What is Parikshe?",
+      "answer": "Parikshe is a student-first e-learning platform built to support SSLC, PUC, and KCET exam preparation across Karnataka."
+    },
+    {
+      "id": 2,
+      "question": "Is there doubt-solving or mentorship support available?",
+      "answer": "Yes. We offer doubt-solving and mentorship. Our Premium plans include 10 am to 10 pm doubt-solving support."
+    },
+    {
+      "id": 3,
+      "question": "What makes Parikshe different from tuition or coaching centers?",
+      "answer": "Parikshe brings the quality and results of expert coaching to students anywhere, anytime, without the high costs of tuition."
+    },
+    {
+      "id": 4,
+      "question": "Which districts and cities is Parikshe currently active in?",
+      "answer": "Parikshe has a presence in 33 districts and 27 cities across Karnataka, reaching thousands of students through digital learning and field outreach."
+    },
+    {
+      "id": 5,
+      "question": "Is Parikshe free for students?",
+      "answer": "Parikshe provides free access for students through YouTube; some advanced features are a part of premium plans via the Parikshe app and Parikshe Website."
+    },
+    {
+      "id": 6,
+      "question": "What subjects are covered in Parikshe?",
+      "answer": "Parikshe covers all major subjects for SSLC, PUC (Science & Commerce), and KCET, including Physics, Chemistry, Maths, Biology, English, Kannada, Hindi, Social Science, Accountancy, Business Studies, Economics, and Computer Science."
+    }
+  ],
+  "stats": {
+    "students": "1 lakh+",
+    "appDownloads": "50000+",
+    "lectures": "1000+",
+    "schoolCollaborations": "100+"
+  }
+}
