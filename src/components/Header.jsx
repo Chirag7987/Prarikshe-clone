@@ -6,6 +6,7 @@ import { ToastContext } from '../context/ToastContext';
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { getCartCount } = useContext(CartContext);
   const { showToast } = useContext(ToastContext);
 
@@ -18,12 +19,18 @@ const Header = () => {
     }
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav">
         <div className="logo">
           <Link to="/">PARIKSHE</Link>
         </div>
+        
+        {/* Desktop Navigation */}
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
@@ -31,6 +38,38 @@ const Header = () => {
           <li><Link to="/contact">Contact Us</Link></li>
           <li><Link to="/study">SSLC Study</Link></li>
         </ul>
+        
+        {/* Mobile Menu Backdrop */}
+        {isMobileMenuOpen && (
+          <div 
+            className="mobile-menu-backdrop"
+            onClick={closeMobileMenu}
+          ></div>
+        )}
+        
+        {/* Mobile Menu Button */}
+        <button 
+          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+          <span className="hamburger-line"></span>
+        </button>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <ul className="mobile-nav-links">
+            <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+            <li><Link to="/about" onClick={closeMobileMenu}>About Us</Link></li>
+            <li><Link to="/careers" onClick={closeMobileMenu}>Careers</Link></li>
+            <li><Link to="/contact" onClick={closeMobileMenu}>Contact Us</Link></li>
+            <li><Link to="/study" onClick={closeMobileMenu}>SSLC Study</Link></li>
+          </ul>
+        )}
+        
         <div className="nav-actions">
           <button
             className="search-btn"
